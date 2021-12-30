@@ -1,0 +1,9 @@
+1, Header
+2, Slider
+3, Content
+ a, About
+ b, Tour
+ c, Contact
+ d, Image
+ e, footer
+4, Footer

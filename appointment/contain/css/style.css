@@ -1,0 +1,497 @@
+/*
+1, Từ trên xuống dưới
+2, Từ ngoài vào trong
+3, Từ tổng quan đến chi tiết
+*/
+/*
+1, Vị trí
+2, Kích thước(widht, height)
+3, Màu sắc
+4, Kiểu dáng....
+*/
+/* ---Reset CSS--- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+/* ---Availabel--- */
+.text-white{
+    color: #000 !important;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mt8{
+    margin-top: 8px;
+}
+
+.mt16{
+    margin-top: 16px;
+}
+
+.col{
+    padding-left: 8px;
+    padding-right: 8px;
+    float: left;
+}
+.col-full{
+    width: 100%;
+}
+.col-half{
+    width: 50%;
+}
+.col-third{
+    width: calc(100% / 3);
+}
+/* ---Main--- */
+/*******************/
+/*******Header******/
+/*******************/
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 1130,600px;
+    height: 60px;
+    background-color: #000;
+    z-index: 1 ;
+}
+/*nav*/
+#nav{
+    display: inline-block;
+}
+
+#nav > li{
+    display: inline-block;
+}
+#nav li {
+    position: relative;
+}
+
+#nav > li >a{
+    color: #fff;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 22px;
+    display: block;
+}
+
+#nav .nav-ti{
+    font-size: 13px;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color: #000;
+    background-color: rgb(131, 125, 125);
+}
+#nav .subnav{
+    box-shadow: 0 0 18px rgba(95, 90, 95, 0.8);
+    list-style-type: none;
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    min-width: 160px;
+    font-size: 20px;
+}
+
+#nav .subnav a{
+    color: #000;
+}
+/*search*/
+#header .search-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .search-menu,
+#header .search-boz{
+    float: right;
+}
+#header .menu-icon,
+#header .search-icon{
+    color: #fff;
+    line-height: 60px;
+    padding: 0 25px;
+}
+.search-boz:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.search-menu:hover{
+    background-color: rgb(112, 109, 109);
+    cursor: pointer;
+}
+/*****************/
+/******Slider*****/
+/*****************/
+#slider {
+    margin-top: 60px;
+    padding-top: 50%;
+    background: url('../img/champions-league-la-gi.jpg') top center  no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+#slider .text-content{
+    position: absolute;
+    color: yellowgreen;
+    bottom: 60px;
+    text-align: center;
+    width: 100%;
+}
+#slider .text-header{
+    margin: 10px;
+}
+#slider .text-description{
+    font-size: 20px;
+}
+/****************/
+/*****CONTENT****/
+/****************/
+#content {
+
+}
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0 100px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+#content .section-heading{
+    text-align: center;
+
+}
+#content .section-sub-heading{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-style: italic;
+    opacity: 0.6;
+    
+}
+
+/*About-section*/
+#content .about-section{
+    line-height: 1.4;
+    text-align: justify;
+}
+
+#content .members-list{
+    overflow: hidden;
+}
+
+#content .members-item{
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+#content .mem-img1{
+    width: 176px;
+    height: 118px;
+    border-radius: 4px;
+}
+
+#content .mem-img2{
+    width: 165px;
+    height: 118px;
+    border-radius: 4px;
+}
+
+#content .mem-img3{
+    width: 166px;
+    height: 118px;
+    border-radius: 4px;
+}
+
+#content .member-name{
+    padding: 16px;
+}
+
+/**Tour Section**/
+/*content-section*/
+.tour-section{
+    background: url('../img/champion2.jpg') top center no-repeat;
+    background-size: 100% 100%;
+}
+.tour-section-description{
+    line-height: 1.4;
+    text-align: justify;
+}
+/*book-list*/
+.book-list{
+    background-color: #fff;
+    margin-top: 40px;
+}
+.book-list li{
+    list-style: none;
+    padding: 10px 16px;
+}
+
+.book-list .sold-out1{
+    background-color: red;
+    color: #fff;
+    padding: 4px;
+    margin-left: 53px;
+}
+.book-list .sold-out2{
+    background-color: red;
+    color: #fff;
+    padding: 4px;
+    margin-left: 10px;
+}
+
+.book-list .sold{
+    width: 25px;
+    float: right;
+    margin-top: -3px;
+}
+
+.book-list .quanlity{
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border-radius: 100%;
+    width: 33px;
+    height: 26px;
+    text-align: center;
+    line-height: 25px;
+    margin-top: -2px;
+    margin-right: -4px;
+}
+/*places-list*/
+.places-list{
+    margin-top: 16px;
+    margin-bottom: 23px;
+    overflow: hidden;
+}
+.places-item{
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 8px;
+   
+}
+.place-img1,
+.place-img2,
+.place-img3{
+    width: 100%;
+    height: 180px;
+    display: block;
+}
+.place-body{
+    background-color: #fff;
+    padding: 12px;
+}
+.place-head{
+    opacity: 0.8;
+}
+.place-time{
+    font-style: italic;
+    opacity: 0.5;
+    padding: 15px 0;
+}
+.place-img{
+    text-align: center;
+    padding: 10px 0;
+}
+.pimg1{
+    width: 30%;
+}
+.pimg{
+    width: 30%;
+}
+.pimg2{
+    width: 30%;
+}
+.pimg3{
+    width: 24%;
+}
+.place-buy-btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 11px 16px;
+    display: inline-block;
+    border: none;
+}
+.place-buy-btn:hover{
+    background-color: #ddd;
+    color: #000;
+}
+/**Contact-section**/
+.contact-section{
+    background: url('../img/ck\ c1.jpg') top center no-repeat;
+    background-size: 100% 100%;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-info p{
+    padding: 6px;
+    color: #fff;
+}
+.contact-name{
+    padding: 10px;
+    border: solid 1px #000;
+    width: 100%;
+}
+
+.contact-submit{
+    float: right;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.contact-submit:hover{
+    background-color: rgb(163, 158, 158);
+}
+/******************/
+/*******Map********/
+/******************/
+.map-section img{
+    width: 100%;
+}
+#footer {
+    text-align: center;
+    background-color: #515253;
+    color: white;
+    padding: 30px;
+}
+
+/*****************/
+/*******Modal******/
+/*****************/
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgb(0,0,0, 0.3);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 300px;
+    position: relative;
+    animation: modalFadeIn ease .5s;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.modal-close:hover{
+    background-color: red;
+    color: #000;
+}
+
+.modal-header {
+    background-color: #0B9B7C;
+    color: #fff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.header-ti-bag{
+    padding: 8px;
+}
+
+.modal-body{
+    padding: 16px 16px;
+}
+.modal-ticket{
+    display: block;
+    font-size: 18px;
+}
+.input-per{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    margin: 10px 0 20px 0;
+}
+
+#buy-ticket {
+    width: 100%;
+    padding: 10px;
+    /* background-color: #FFFFFF; */
+    background-color: #0B9B7C;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}
+
+#buy-ticket:hover{
+  opacity: 0.5;
+}
+
+.foot-ticket{
+    padding: 8px 16px;
+    text-align: right;
+}
+.foot-ticket a{
+    color: rgb(62, 166, 226);
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-130px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
